@@ -2,9 +2,9 @@ var readlineSync = require("readline-sync");
 const chalk = require('chalk');
 
 
-var userBirthday = readlineSync.question("What is your date of birth?\n(please fill it in DD-MM-YYYY format) ");
+var userBirthday = readlineSync.question(chalk.red("What is your date of birth?\n(please fill it in DD-MM-YYYY format) "));
 
-var userLuckyNum = readlineSync.question("What is your lucky number? ");
+var userLuckyNum = readlineSync.question(chalk.bold.yellow("What is your lucky number? "));
 
 var n = (userBirthday);
 
@@ -14,9 +14,6 @@ var number = n.split('-')
 
 // Join number with date
 n = Number(number.join(''));
-
-
-
 
 
 var a = 0;
