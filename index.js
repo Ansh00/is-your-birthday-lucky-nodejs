@@ -1,4 +1,6 @@
 var readlineSync = require("readline-sync");
+const chalk = require('chalk');
+
 
 var userBirthday = readlineSync.question("What is your date of birth?\n(please fill it in DD-MM-YYYY format) ");
 
