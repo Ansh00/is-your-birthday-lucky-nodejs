@@ -40,8 +40,8 @@ for (var i=0; i<array.length; i=i+1) {
 // Check in every comment by using console.log(var);
 
 if (sum%userLuckyNum == 0) {
-  console.log("Your date of birth is a special lucky number!")
+  console.log(chalk.bold.greenBright("Your date of birth is a special lucky number!"))
 }
 else {
-  console.log("Your date of birth is not a special lucky number")
+  console.log(chalk.bold.redBright("Your date of birth is not a special lucky number"))
 }
